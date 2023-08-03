@@ -38,7 +38,8 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
+    text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -65,6 +66,16 @@ svg {
 }
 
 // utilities
+.hidden-on-mobile {
+    @include breakpoints-down(large) {
+        display: none;
+    }
+}
+.hidden-on-desktop {
+    @include breakpoints-up(large) {
+        display: none;
+    }
+}
 
 // General styles
 body {

@@ -1,0 +1,53 @@
+.header {
+    max-width: 1440px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
+
+    &__flx ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 0.9em;
+    }
+
+    a {
+        color: var(--crl-vdb);
+        transition: all 0.3s ease-in-out;
+    }
+
+    a:hover {
+        color: var(--crl-s-red);
+    }
+
+    img {
+        scale: 1.05;
+    }
+}
+
+// utilities
+@include breakpoints-down(large) {
+    .header {
+        padding: 1em 2em;
+    }
+}
+
+.log-btn {
+    background-color: var(--crl-s-red);
+    border: 2px solid var(--crl-s-red);
+    padding: 10px 35px;
+    border-radius: 5px;
+    font-weight: $fw-500;
+    font-family: inherit;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+.log-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--crl-s-red);
+    color: var(--crl-s-red);
+}
