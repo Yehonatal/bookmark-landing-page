@@ -1,11 +1,12 @@
-import "../Style/style.css";
+import "../Style/header.css";
 import MainLogo from "../assets/images/logo-bookmark.svg";
 import HamIcon from "../assets/images/icon-hamburger.svg";
+// import HamClose from "../assets/images/icon-close.svg";
 
 const Header = () => {
     return (
         <header className="header">
-            <div>
+            <div className="logo">
                 <img src={MainLogo} alt="logo" />
             </div>
             <nav className="header__flx hidden-on-mobile">
