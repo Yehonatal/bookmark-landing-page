@@ -15,6 +15,7 @@
     --crl-gry-sh: rgba(164, 164, 164, 0.447);
     --white: white;
     overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 *,
